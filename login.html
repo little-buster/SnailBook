@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./js/bootstrap/css/bootstrap.css">
+    <title>蜗牛读书_登录界面</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            white-space: nowrap;
+        }
+        @font-face {
+            font-family: "SF";
+            src: url(./font/SF-Pro-Text-Regular.otf) format("opentype");
+        }
+        @font-face {
+            font-family: "SF_I";
+            src: url(./font/SF-Pro-Text-MediumItalic.otf) format("opentype");
+        }
+        .italic{
+            font-family: "SF_I";
+        }
+        .SF{
+            font-family: "SF";
+        }
+        header{
+            
+            display: block;
+            padding-bottom: 20px;
+            letter-spacing: 10px;
+        }
+        header h1{
+            white-space: nowrap;
+        }
+        .tip_font{
+            color: #8C8C8C;
+            margin-bottom: 70px;
+            font-weight: bold;
+        }
+        .sm_font{
+            font-size: 14px;
+        }
+        .md_font{
+            font-size: 19px;
+        }
+        .lg_font{
+            font-size: 23px;
+        }
+        input{
+            outline: none;
+            outline-style: none;
+            height: 22px;
+            border: none;
+            border-bottom:2px solid #E4E2E2;
+            padding: 20px 0px;
+            display: block;
+            margin-right: 20px;
+        }
+        input::placeholder{
+            text-align: center;
+            color: #dfdede;
+            letter-spacing: 2px;
+            font-size: 16px;
+            font-family: "SF";
+        }
+        .check_msg{
+            display: inline-block;
+            position: relative;
+        }
+        .check_msg img{
+            height: 60px;
+            width: 120px;
+            top: -43px;
+            display: block;
+            position: absolute;
+            
+            
+        }
+       .btn{
+           position: absolute;
+           width: 120px;
+           height: 50px;
+           top: -10px;
+           left: 200px;
+       }
+       .content_regular{
+         width: 50%;
+         margin-top: 40px;
+         position: relative;
+       }
+       .login_btn{
+           background:#A73A3A ;
+           border-radius: 50%/100%;
+           height: 50px;
+           width: 250px;
+           box-shadow: -4px -4px 2px #888888dc;
+       }
+       .login_btn p{
+            text-align: center;
+            color: rgba(255, 255, 255, 0.917);
+            line-height: 40px;
+       }
+        
+    </style>
+</head>
+<body>
+    <header class="text-center"><h3>手机号登录</h3></header>
+    <div class="col-xs-4" style="background: red; clear: both; height: 100%;"><div style="height: 20px;"></div></div>
+    <br><div style="background: green; margin:0 auto; ">测试带</div>
+    <div class="text-center">
+        <p class="tip_font md_font SF">即将登录手机号：1865432123</p>
+    </div>
+    <div class=" center-block content_regular" >
+        <div style="display: inline-block;">
+             <input  placeholder="输入图形验证码" >
+        </div>
+        <div class="check_msg"><img src="./checkmsg.png" alt=""></div>
+    </div>
+    <div class="center-block content_regular" >
+        <input type="text" placeholder="获取验证码">
+        <button class="btn SF">获取验证码</button>
+    </div>
+    <div class="content_regular">
+        <button  class="btn login_btn"><p class="SF md_font">登录</p></button>
+    </div>
+   
+
+</body>
+</html>
